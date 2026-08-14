@@ -1,3 +1,6 @@
+
+# not finish yet
+
 Welcome back. Room 1 covered the technology stack that powers modern AI: how ML algorithms learn from data, how neural networks process it, and how LLMs like ChatGPT emerged from all of that. If any of those terms are still fuzzy, it's worth going back before continuing.
 
 This room is where things get interesting from a security perspective. Now that you understand what AI is and how it works, we're going to look at what happens when it goes wrong, intentionally or otherwise. This room covers:
