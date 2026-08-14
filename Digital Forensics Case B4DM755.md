@@ -344,6 +344,9 @@ Deleted files could be recovered by selecting the relevant file or directory and
 - Deleted files may still be recoverable during forensic analysis.
 - Analysis should be performed on the forensic image rather than the original evidence.
 
+Evidence:
+<img width="552" height="434" alt="Screenshot 2026-08-14 173458" src="https://github.com/user-attachments/assets/8b072ec1-6846-4fe2-b5d2-905d05422450" />
+
 ---
 
 # Task 7 — Case B4DM755: At the Forensics Laboratory
@@ -377,8 +380,6 @@ The investigation revealed:
 
 The recovered artefacts were examined using **ExifTool** and other forensic analysis techniques.
 
-<!-- IMAGE PLACEHOLDER: Metadata analysis / ExifTool -->
-![Metadata Analysis](./images/task-7-metadata.png)
 
 Further analysis involved examining the contents of `pandorasbox.zip`, identifying the source of code, and finding additional information contained within the recovered documents.
 
@@ -395,16 +396,10 @@ Further analysis involved examining the contents of `pandorasbox.zip`, identifyi
 | Who was the point of contact of Mr William S. McClean in 2022? | `Karl Renato Abelardo` |
 | What are the GPS coordinates during the 2022 meetup? | `14°26'25.7"N 120°59'00.8"E` |
 | What is the password to extract `pandorasbox.zip`? | `DarkVault$Pandora=DONOTOPEN!K1ngCr1ms0n!` |
-<img width="372" height="38" alt="Screenshot 2026-08-14 185842" src="https://github.com/user-attachments/assets/35514b63-2c94-4090-97cf-4e5b1fe45a02" />
-
 | From which company did the source code in the `pandorasbox` directory originate? | `SwiftSpend Financial` |
-<img width="703" height="259" alt="Screenshot 2026-08-14 190159" src="https://github.com/user-attachments/assets/ac4a4e7f-1b41-405d-b84f-f2499812526b" />
-
 | Who was listed as the beneficiary in one of the unsigned documents? | `Mr. Giovanni Vittorio DeVentura` |
-<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/46f93d11-a45a-4b6b-a547-56d497c01935" />
-
 | What is the hidden flag? | `THM{sCr0LL_sCr0LL_cL1cK_cL1cK_4TT3NT10N_2_D3T41L5_15_CRUC14L!!}` |
-<img width="596" height="63" alt="Screenshot 2026-08-14 185950" src="https://github.com/user-attachments/assets/61256a88-03b8-4946-87e8-3d6aa865064d" />
+
 
 ## Key Takeaways
 
