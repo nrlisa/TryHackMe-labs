@@ -395,9 +395,16 @@ Further analysis involved examining the contents of `pandorasbox.zip`, identifyi
 | Who was the point of contact of Mr William S. McClean in 2022? | `Karl Renato Abelardo` |
 | What are the GPS coordinates during the 2022 meetup? | `14°26'25.7"N 120°59'00.8"E` |
 | What is the password to extract `pandorasbox.zip`? | `DarkVault$Pandora=DONOTOPEN!K1ngCr1ms0n!` |
+<img width="372" height="38" alt="Screenshot 2026-08-14 185842" src="https://github.com/user-attachments/assets/35514b63-2c94-4090-97cf-4e5b1fe45a02" />
+
 | From which company did the source code in the `pandorasbox` directory originate? | `SwiftSpend Financial` |
+<img width="703" height="259" alt="Screenshot 2026-08-14 190159" src="https://github.com/user-attachments/assets/ac4a4e7f-1b41-405d-b84f-f2499812526b" />
+
 | Who was listed as the beneficiary in one of the unsigned documents? | `Mr. Giovanni Vittorio DeVentura` |
+<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/46f93d11-a45a-4b6b-a547-56d497c01935" />
+
 | What is the hidden flag? | `THM{sCr0LL_sCr0LL_cL1cK_cL1cK_4TT3NT10N_2_D3T41L5_15_CRUC14L!!}` |
+<img width="596" height="63" alt="Screenshot 2026-08-14 185950" src="https://github.com/user-attachments/assets/61256a88-03b8-4946-87e8-3d6aa865064d" />
 
 ## Key Takeaways
 
@@ -405,6 +412,11 @@ Further analysis involved examining the contents of `pandorasbox.zip`, identifyi
 - **Metadata** can reveal useful investigative information.
 - ExifTool can assist with extracting metadata from files.
 - Deleted, hidden, or disguised information may provide important evidence during an investigation.
+
+<img width="703" height="259" alt="Screenshot 2026-08-14 190159" src="https://github.com/user-attachments/assets/625a016b-f13c-40f8-8f61-1043ae26d08c" />
+
+<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/1ecba180-82f9-4227-890e-281ffa3218f0" />
+<img width="596" height="63" alt="Screenshot 2026-08-14 185950" src="https://github.com/user-attachments/assets/657f11e0-cc50-48f4-8c83-a31ac18eea63" />
 
 ---
 
@@ -453,6 +465,7 @@ During court proceedings:
 | In which phase is a warrant obtained for search, seizure, and examination of the suspect's computer data? | `Pre-search` |
 | In which phase is forensic analysis performed on acquired digital evidence? | `Post-search` |
 | Which phase involves presenting forensic artefacts and evidence with proper documentation in court? | `Trial` |
+<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/1732dde8-b79c-435d-a897-45b6d60e8fdc" />
 
 ## Key Takeaways
 
