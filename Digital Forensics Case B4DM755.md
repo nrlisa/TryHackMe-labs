@@ -78,9 +78,6 @@ For this scenario, the official role is **Forensics Lab Analyst**, while the ass
 
 The DFIR First Responder is responsible for gathering **digital artefacts and evidence** from the crime scene and ensuring that they are properly preserved.
 
-<!-- IMAGE PLACEHOLDER: Task 1 / Case introduction -->
-![Task 1 - Introduction](./images/task-1-introduction.png)
-
 ## THM Questions
 
 | Question | Answer |
@@ -123,12 +120,6 @@ Important steps include:
 - Verifying evidence during handover.
 - Maintaining Chain of Custody documentation.
 
-<!-- IMAGE PLACEHOLDER: Digital evidence acquisition -->
-![Digital Evidence Acquisition](./images/task-2-acquisition.png)
-
-<!-- IMAGE PLACEHOLDER: Chain of Custody documentation -->
-![Chain of Custody](./images/task-2-chain-of-custody.png)
-
 ## THM Questions
 
 | Question | Answer |
@@ -164,9 +155,6 @@ The practical process involves:
 5. Verifying the integrity of the image.
 6. Analysing the forensic image.
 
-<!-- IMAGE PLACEHOLDER: Practical digital forensics process -->
-![Digital Forensics Process](./images/task-3-forensics-process.png)
-
 ## Key Takeaways
 
 - Digital evidence should be preserved before examination.
@@ -188,9 +176,6 @@ The artefact had to be documented, labelled, preserved, and recorded using the C
 ## Hands-on Tasks
 
 The acquired flash drive was treated as digital evidence and prepared for forensic imaging.
-
-<!-- IMAGE PLACEHOLDER: Flash drive discovered at the crime scene -->
-![Flash Drive Evidence](./images/task-4-flash-drive.png)
 
 ## THM Questions
 
@@ -229,9 +214,6 @@ A **write-blocking device** can prevent accidental modification of a suspect dri
 The flash drive was loaded into FTK Imager and checked for encryption.
 
 The attached flash drive was found to be **unencrypted**.
-
-<!-- IMAGE PLACEHOLDER: FTK Imager interface -->
-![FTK Imager Interface](./images/task-5-ftk-imager.png)
 
 ## THM Questions
 
@@ -293,9 +275,6 @@ The process involved:
 5. Selecting **File → Detect EFS Encryption**.
 6. Checking the result.
 
-<!-- IMAGE PLACEHOLDER: Detecting EFS encryption -->
-![EFS Encryption Detection](./images/task-6-efs-detection.png)
-
 ### Creating a Forensic Disk Image
 
 The forensic image was created through:
@@ -303,9 +282,6 @@ The forensic image was created through:
 **File → Create Disk Image → Physical Drive**
 
 The image type selected was **Raw (dd)**.
-
-<!-- IMAGE PLACEHOLDER: Creating forensic disk image -->
-![Creating Forensic Disk Image](./images/task-6-create-image.png)
 
 ### Mounting and Analysing the Image
 
@@ -315,15 +291,10 @@ The forensic image was added using:
 
 The evidence could then be explored through the Evidence Tree Pane, File List Pane, and Viewer Pane.
 
-<!-- IMAGE PLACEHOLDER: Mounted forensic image in FTK Imager -->
-![Mounted Forensic Image](./images/task-6-mounted-image.png)
-
 ### Recovering Deleted Files
 
 Deleted files could be recovered by selecting the relevant file or directory and using **Export Files**.
 
-<!-- IMAGE PLACEHOLDER: Recovering deleted files -->
-![Recovering Deleted Files](./images/task-6-recover-files.png)
 
 ## THM Questions
 
@@ -336,6 +307,10 @@ Deleted files could be recovered by selecting the relevant file or directory and
 | How many files were deleted in total? | `6` |
 | How many recovered files are corrupted (e.g., 0 file size)? | `3` |
 
+Evidence:
+
+<img width="552" height="434" alt="Screenshot 2026-08-14 173458" src="https://github.com/user-attachments/assets/8b072ec1-6846-4fe2-b5d2-905d05422450" />
+
 ## Key Takeaways
 
 - FTK Imager can create and verify forensic disk images.
@@ -343,9 +318,6 @@ Deleted files could be recovered by selecting the relevant file or directory and
 - Hashes can be used to verify evidence integrity.
 - Deleted files may still be recoverable during forensic analysis.
 - Analysis should be performed on the forensic image rather than the original evidence.
-
-Evidence:
-<img width="552" height="434" alt="Screenshot 2026-08-14 173458" src="https://github.com/user-attachments/assets/8b072ec1-6846-4fe2-b5d2-905d05422450" />
 
 ---
 
@@ -400,6 +372,11 @@ Further analysis involved examining the contents of `pandorasbox.zip`, identifyi
 | Who was listed as the beneficiary in one of the unsigned documents? | `Mr. Giovanni Vittorio DeVentura` |
 | What is the hidden flag? | `THM{sCr0LL_sCr0LL_cL1cK_cL1cK_4TT3NT10N_2_D3T41L5_15_CRUC14L!!}` |
 
+Evidence:
+
+<img width="703" height="259" alt="Screenshot 2026-08-14 190159" src="https://github.com/user-attachments/assets/625a016b-f13c-40f8-8f61-1043ae26d08c" />
+<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/1ecba180-82f9-4227-890e-281ffa3218f0" />
+<img width="596" height="63" alt="Screenshot 2026-08-14 185950" src="https://github.com/user-attachments/assets/657f11e0-cc50-48f4-8c83-a31ac18eea63" />
 
 ## Key Takeaways
 
@@ -407,12 +384,6 @@ Further analysis involved examining the contents of `pandorasbox.zip`, identifyi
 - **Metadata** can reveal useful investigative information.
 - ExifTool can assist with extracting metadata from files.
 - Deleted, hidden, or disguised information may provide important evidence during an investigation.
-
-<img width="703" height="259" alt="Screenshot 2026-08-14 190159" src="https://github.com/user-attachments/assets/625a016b-f13c-40f8-8f61-1043ae26d08c" />
-
-<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/1ecba180-82f9-4227-890e-281ffa3218f0" />
-<img width="596" height="63" alt="Screenshot 2026-08-14 185950" src="https://github.com/user-attachments/assets/657f11e0-cc50-48f4-8c83-a31ac18eea63" />
-
 ---
 
 # Task 8 — Post-Analysis of Evidence to Court Proceedings
@@ -450,9 +421,6 @@ During court proceedings:
 
 - Present forensic artefacts and evidence together with proper documentation.
 
-<!-- IMAGE PLACEHOLDER: Evidence presentation / court proceedings -->
-![Evidence to Court Proceedings](./images/task-8-court-proceedings.png)
-
 ## THM Questions
 
 | Question | Answer |
@@ -460,8 +428,6 @@ During court proceedings:
 | In which phase is a warrant obtained for search, seizure, and examination of the suspect's computer data? | `Pre-search` |
 | In which phase is forensic analysis performed on acquired digital evidence? | `Post-search` |
 | Which phase involves presenting forensic artefacts and evidence with proper documentation in court? | `Trial` |
-<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/1732dde8-b79c-435d-a897-45b6d60e8fdc" />
-
 ## Key Takeaways
 
 - Digital forensic investigations continue beyond evidence acquisition and analysis.
