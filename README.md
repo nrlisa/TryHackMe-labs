@@ -1,51 +1,53 @@
-# TryHackMe — Cybersecurity Learning
+# Cybersecurity Portfolio
 
-This directory contains my hands-on cybersecurity learning and practical exercises
-completed through [TryHackMe](https://tryhackme.com/).
+Hands-on cybersecurity learning and practical exercises completed through [TryHackMe](https://tryhackme.com/).
 
-The rooms cover foundational and intermediate topics across **Windows, Linux,
-networking, web security, cloud security, and other cybersecurity areas**.
-
-> Room writeups contain my notes, practical observations, key concepts, and
-> relevant evidence from completing the room.
----
-
-## 📝 Writeup Format
-
-Each completed room is documented separately where appropriate.
-
-Writeups generally include:
-
-- **Room objective**
-- **Concepts learned**
-- **Hands-on tasks**
-- **Commands/tools used**
-- **Security observations**
-- **Key takeaways**
-- **Evidence/screenshots**, where relevant
-
-The purpose is to document **what I learned and why it matters from a security
-perspective**, rather than simply recording the answers to room questions.
+Each room writeup documents **what was learned and why it matters from a security perspective** — not just answers, but observations, tool usage, and real-world relevance.
 
 ---
 
+## Completed Rooms
+
+### Windows
+
+| Room | Topic |
+|------|-------|
+| [Windows Fundamentals 1](windows-fundamentals-1/README.md) | Windows editions, GUI, file systems (NTFS/ADS), user accounts, UAC, Task Manager |
+
+### Digital Forensics
+
+| Room | Topic |
+|------|-------|
+| [Digital Forensics Case B4DM755](Digital%20Forensics%20Case%20B4DM755.md) | DFIR first responder, Chain of Custody, FTK Imager, forensic disk imaging, metadata analysis, ExifTool |
+
+### AI Fundamentals
+
+| Room | Topic |
+|------|-------|
+| [The Building Blocks of AI](completed%20modules/AI%20Fundamentals/The%20Building%20Blocks%20of%20AI.md) | AI/ML/DL/LLM concepts, neural networks, transformers, RLHF |
+| [AI Security Threats](completed%20modules/AI%20Fundamentals/AI%20Security%20Threats.md) | Prompt injection, data poisoning, model theft, ATLAS framework |
 
 ---
 
-## 📈 Progress
+## Writeup Format
 
-**Rooms completed:** `X`
+Every writeup follows a consistent structure:
 
-**Current focus:** `Cybersecurity / Cloud Security`
-
-I will continue adding rooms and updating this directory as I progress.
+- **Room objective** — what the room covers
+- **Concepts learned** — key ideas and definitions
+- **Hands-on tasks** — practical steps and tools used
+- **THM questions** — answers with context
+- **Security observations** — independent analysis of why the topic matters
+- **Key takeaways** — concise summary of the most important points
 
 ---
 
-## ⚠️ Disclaimer
+## Topics Covered
 
-All activities documented here were performed in **TryHackMe's authorized
-learning environments** for educational purposes.
+`Windows Fundamentals` · `NTFS` · `Alternate Data Streams` · `UAC` · `Digital Forensics` · `DFIR` · `Chain of Custody` · `FTK Imager` · `Forensic Imaging` · `Metadata Analysis` · `ExifTool` · `Artificial Intelligence` · `Machine Learning` · `Neural Networks` · `LLMs` · `Transformers` · `AI Security` · `Prompt Injection` · `Data Poisoning`
 
-The techniques and tools discussed should only be used on systems where
-permission has been explicitly granted.
+---
+
+## Disclaimer
+
+All activities documented here were performed in **TryHackMe's authorized learning environments** for educational purposes. The techniques and tools discussed should only be used on systems where permission has been explicitly granted.

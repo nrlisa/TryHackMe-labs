@@ -1,12 +1,12 @@
-# The Building Blocks of AI
+# TryHackMe — The Building Blocks of AI
 
 ## Room Objective
 
 This room introduces the fundamental concepts behind **Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), Neural Networks, and Large Language Models (LLMs)**.
 
-The objective is to understand how these technologies work, how they relate to each other, and how they are used in modern AI systems.
+The objective is to understand how these technologies work, how they relate to each other, and how they are used in modern AI systems. The room also provides practical experience through TryHackMe's AI Agent platform and interactive neural network exercises.
 
-The room also provides practical experience through TryHackMe's AI Agent platform and interactive neural network exercises.
+---
 
 ## Concepts Learned
 
@@ -17,15 +17,15 @@ The room also provides practical experience through TryHackMe's AI Agent platfor
 - Deep Learning (DL)
 - Input, hidden, and output layers
 - Synapses and weighted connections
-- Large Language Models (LLMs)v
+- Large Language Models (LLMs)
 - Generative AI
 - Relationship between AI, ML, DL, and LLMs
 
 ---
 
-## Task 1 — Introduction to AI/ML
+# Task 1 — Introduction to AI/ML
 
-### Concepts Learned
+## Concepts Learned
 
 Artificial Intelligence refers to computer systems capable of performing tasks that would normally require human reasoning, comprehension, problem-solving, or creativity.
 
@@ -46,33 +46,36 @@ A typical ML lifecycle includes:
 
 **Overfitting** occurs when a model becomes too familiar with its training data and fails to generalise effectively to new, unseen data. Instead of learning the underlying patterns, the model effectively memorises the training examples.
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Explored the introductory AI/ML concepts.
 - Reviewed the Machine Learning lifecycle.
 - Learned how models learn from training data.
 - Interacted with the introductory AI Agent platform.
 
-### THM Questions
+## THM Questions
 
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | I'm ready to learn about AI/ML security! | No answer needed |
-| 2 | What is the term for when a model becomes too familiar with its training data and fails to generalise to new data? | `Overfitting` |
-| 3 | What is the subfield of AI that enables systems to learn from data without being explicitly programmed? | `Machine Learning` |
+**I'm ready to learn about AI/ML security!**
 
-### Key Takeaways
+**Answer:** No answer needed
 
-- AI is the broader field of creating systems capable of tasks associated with human intelligence.
-- ML is a subfield of AI that learns patterns from data.
-- ML systems require an iterative lifecycle of training, evaluation, deployment, and monitoring.
-- Overfitting can prevent a model from generalising effectively to new data.
+**What is the term for when a model becomes too familiar with its training data and fails to generalise to new data?**
+
+**Answer:** `Overfitting`
+
+**What is the subfield of AI that enables systems to learn from data without being explicitly programmed?**
+
+**Answer:** `Machine Learning`
+
+## Security Observation
+
+AI is the broader field of creating systems capable of tasks associated with human intelligence. ML is a subfield of AI that learns patterns from data. ML systems require an iterative lifecycle of training, evaluation, deployment, and monitoring. Overfitting can prevent a model from generalising effectively to new data — in a security context, an overfitted model may fail to detect novel attack patterns it was not trained on.
 
 ---
 
-## Task 2 — Introducing TryHackMe's AI Agent Platform
+# Task 2 — Introducing TryHackMe's AI Agent Platform
 
-### Concepts Learned
+## Concepts Learned
 
 Some tasks in this room use the **TryHackMe AI Agent platform** as an interactive environment instead of a traditional terminal or virtual machine.
 
@@ -86,29 +89,22 @@ The AI agents are configured with different:
 
 The interaction is driven through natural language prompts.
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Opened the TryHackMe AI Agent platform.
 - Interacted with the sandbox AI agent.
 - Experimented with natural-language prompts.
 - Observed how the agent responded to different inputs.
 
-### THM Questions
+## Security Observation
 
-No additional THM questions requiring an answer for this task.
-
-### Key Takeaways
-
-- AI agents can be used as interactive environments for security learning.
-- Agent behaviour can depend heavily on the instructions and prompts provided.
-- Prompt phrasing can influence how an AI agent responds.
-- AI agents can be configured with specific goals and constraints.
+AI agents can be used as interactive environments for security learning. Agent behaviour can depend heavily on the instructions and prompts provided, which highlights how prompt phrasing can influence AI agent responses — a concept directly relevant to understanding prompt injection vulnerabilities.
 
 ---
 
-## Task 3 — What is AI and Machine Learning?
+# Task 3 — What is AI and Machine Learning?
 
-### Concepts Learned
+## Concepts Learned
 
 Artificial Intelligence is the overarching field concerned with enabling computers to perform tasks that require forms of human intelligence.
 
@@ -138,7 +134,7 @@ Machine Learning is therefore an iterative process rather than a one-time traini
 
 Overfitting occurs when a model performs well on its training data but performs poorly on previously unseen data. This happens because the model has learned the training examples too closely instead of learning patterns that generalise.
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Reviewed the definition of Artificial Intelligence.
 - Learned how Machine Learning fits within AI.
@@ -146,25 +142,15 @@ Overfitting occurs when a model performs well on its training data but performs 
 - Learned about overfitting.
 - Explored how ML systems learn from data.
 
-### THM Questions
+## Security Observation
 
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | What is the term for when a model becomes too familiar with its training data and fails to generalise to new data? | `Overfitting` |
-| 2 | What is the subfield of AI that enables systems to learn from data without being explicitly programmed? | `Machine Learning` |
-
-### Key Takeaways
-
-- Machine Learning allows systems to learn from data.
-- ML models require training data to identify patterns.
-- Models must be evaluated using data they have not simply memorised.
-- Overfitting is an important ML concept that affects model generalisation.
+Machine Learning allows systems to learn from data and identify patterns, but models must be evaluated using data they have not simply memorised. Overfitting is an important ML concept that affects model generalisation — an overfitted security model may miss real-world threats it was never explicitly trained on.
 
 ---
 
-## Task 4 — Machine Learning Algorithms
+# Task 4 — Machine Learning Algorithms
 
-### Concepts Learned
+## Concepts Learned
 
 Machine Learning algorithms are mathematical methods used to identify patterns in data and make predictions or decisions.
 
@@ -186,34 +172,36 @@ ML algorithms can be divided into four major categories:
 
 **Reinforcement Learning** — an agent interacts with an environment, receiving rewards for desirable actions and penalties for undesirable actions. The agent learns to improve its behaviour over time in order to maximise its reward.
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Identified different categories of ML algorithms.
 - Worked through scenarios involving different learning approaches.
 - Used the AI Agent platform to identify the appropriate algorithm type.
 - Completed the four ML algorithm missions.
 
-### THM Questions
+## THM Questions
 
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | Which category of ML algorithm learns by receiving rewards or penalties based on actions taken in an environment? | `Reinforcement learning` |
-| 2 | Which category of ML algorithm uses a small amount of labelled data to guide learning across a larger unlabelled dataset? | `Semi-supervised learning` |
-| 3 | What's the flag? | `THM{4lg0r1thm_4g3nt}` |
+**Which category of ML algorithm learns by receiving rewards or penalties based on actions taken in an environment?**
 
-### Key Takeaways
+**Answer:** `Reinforcement learning`
 
-- Supervised learning uses labelled data.
-- Unsupervised learning identifies patterns in unlabelled data.
-- Semi-supervised learning combines labelled and unlabelled data.
-- Reinforcement learning learns through rewards and penalties.
-- Choosing the correct ML approach depends on the problem and available data.
+**Which category of ML algorithm uses a small amount of labelled data to guide learning across a larger unlabelled dataset?**
+
+**Answer:** `Semi-supervised learning`
+
+**What's the flag?**
+
+**Answer:** `THM{4lg0r1thm_4g3nt}`
+
+## Security Observation
+
+Supervised learning uses labelled data, unsupervised learning identifies patterns in unlabelled data, semi-supervised learning combines both, and reinforcement learning learns through rewards and penalties. Choosing the correct ML approach depends on the problem and available data — in security, different algorithm types are suited to different threat detection scenarios.
 
 ---
 
-## Task 5 — Neural Networks and Deep Learning
+# Task 5 — Neural Networks and Deep Learning
 
-### Concepts Learned
+## Concepts Learned
 
 Neural networks are computing models inspired by the structure of biological neural networks. A neural network consists of interconnected nodes organised into layers.
 
@@ -232,7 +220,7 @@ Output Layer
 
 **Deep Learning** uses neural networks with multiple layers to process and learn complex patterns from data. It can process large amounts of raw and unstructured data and automatically learn useful features.
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Studied the structure of neural networks.
 - Learned about input, hidden, and output layers.
@@ -241,28 +229,29 @@ Output Layer
 - Manually followed the flow of information through a neural network.
 - Classified an input using the input, hidden, and output stages.
 
-### THM Questions
+## THM Questions
 
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | What is the first layer in a neural network that receives raw input data? | `Input layer` |
-| 2 | What term describes the weighted connections between nodes in a neural network? | `Synapses` |
-| 3 | What's the flag? | `THM{n3ur0n_1_0nl1n3}` |
+**What is the first layer in a neural network that receives raw input data?**
 
-### Key Takeaways
+**Answer:** `Input layer`
 
-- Neural networks consist of interconnected nodes arranged into layers.
-- The input layer receives raw data.
-- Hidden layers extract and process patterns.
-- The output layer produces the final classification or prediction.
-- Connections between nodes have weights that influence how information is processed.
-- Deep Learning uses neural networks with multiple layers to learn complex patterns.
+**What term describes the weighted connections between nodes in a neural network?**
+
+**Answer:** `Synapses`
+
+**What's the flag?**
+
+**Answer:** `THM{n3ur0n_1_0nl1n3}`
+
+## Security Observation
+
+Neural networks consist of interconnected nodes arranged into layers, where the input layer receives raw data, hidden layers extract and process patterns, and the output layer produces the final classification or prediction. Connections between nodes have weights that influence how information is processed. Understanding this architecture is important for recognising where adversarial inputs could be crafted to manipulate model outputs.
 
 ---
 
-## Task 6 — Large Language Models
+# Task 6 — Large Language Models
 
-### Concepts Learned
+## Concepts Learned
 
 Large Language Models (LLMs) are Deep Learning-based AI models designed to process and generate text. LLMs generate text by repeatedly predicting what token or word should come next based on the context provided.
 
@@ -290,29 +279,33 @@ Repeat
 
 **Generative AI** — LLMs power generative AI applications capable of producing original text. Generative AI can also be used to generate images, audio, video, and other forms of content.
 
-### THM Questions
+## THM Questions
 
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | What type of neural network, introduced by Google in 2017, powers modern LLMs? | `Transformer neural networks` |
-| 2 | What is the name of the process where humans review and flag model outputs to refine its behaviour after pre-training? | `RLHF` |
-| 3 | What mechanism do transformer networks use to assign different levels of importance to different words in a sequence? | `Attention` |
-| 4 | What algorithm is used to adjust a model's parameters based on the difference between its prediction and the correct answer? | `Backpropagation` |
+**What type of neural network, introduced by Google in 2017, powers modern LLMs?**
 
-### Key Takeaways
+**Answer:** `Transformer neural networks`
 
-- LLMs are Deep Learning models designed to process and generate language.
-- Transformers are the neural network architecture behind modern LLMs.
-- Attention allows Transformers to consider the importance of words in context.
-- Backpropagation adjusts model parameters during training.
-- RLHF uses human feedback to help refine model behaviour.
-- LLMs are an important component of modern Generative AI systems.
+**What is the name of the process where humans review and flag model outputs to refine its behaviour after pre-training?**
+
+**Answer:** `RLHF`
+
+**What mechanism do transformer networks use to assign different levels of importance to different words in a sequence?**
+
+**Answer:** `Attention`
+
+**What algorithm is used to adjust a model's parameters based on the difference between its prediction and the correct answer?**
+
+**Answer:** `Backpropagation`
+
+## Security Observation
+
+LLMs are Deep Learning models designed to process and generate language. Transformers are the neural network architecture behind modern LLMs, and attention allows them to consider the importance of words in context. Backpropagation adjusts model parameters during training, while RLHF uses human feedback to refine model behaviour. Understanding how LLMs are trained and refined is foundational for understanding AI security risks such as prompt injection and data poisoning.
 
 ---
 
-## Task 7 — Practical
+# Task 7 — Practical
 
-### Concepts Learned
+## Concepts Learned
 
 This task combines the concepts covered throughout the room into a practical neural network exercise.
 
@@ -326,7 +319,7 @@ Hidden Layer
 Output
 ```
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Launched the NEURON-1 interactive environment.
 - Provided input to the neural network.
@@ -334,25 +327,21 @@ Output
 - Interpreted the output.
 - Completed the final classification challenge.
 
-### THM Questions
+## THM Questions
 
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | What's the flag? | `THM{y0u_tr41n3d_th3_n3tw0rk}` |
+**What's the flag?**
 
-### Key Takeaways
+**Answer:** `THM{y0u_tr41n3d_th3_n3tw0rk}`
 
-- Neural networks process information through multiple layers.
-- The input layer receives raw data.
-- Hidden layers identify and combine useful patterns.
-- The output layer produces the final result.
-- Understanding this flow helps connect the theoretical concepts of neural networks and Deep Learning to practical AI systems.
+## Security Observation
+
+Neural networks process information through multiple layers: the input layer receives raw data, hidden layers identify and combine useful patterns, and the output layer produces the final result. Understanding this flow helps connect the theoretical concepts of neural networks and Deep Learning to practical AI systems, including how adversarial inputs could be crafted at each stage.
 
 ---
 
-## Task 8 — Conclusion
+# Task 8 — Room Summary
 
-### Concepts Learned
+## Concepts Learned
 
 This room connected the major building blocks of modern Artificial Intelligence:
 
@@ -371,7 +360,7 @@ Large Language Models (LLMs)
 - **Deep Learning** — a subfield of ML that uses neural networks with multiple layers to process complex data.
 - **Large Language Models** — advanced Deep Learning models built using Transformer architectures and designed to understand and generate human-like text.
 
-### Hands-on Tasks
+## Hands-on Tasks
 
 - Completed the AI/ML fundamentals.
 - Explored four categories of Machine Learning.
@@ -380,7 +369,7 @@ Large Language Models (LLMs)
 - Learned how modern LLMs are trained and refined.
 - Completed the final NEURON-1 challenge.
 
-### Key Takeaways
+## Key Takeaways
 
 - AI is the broader field encompassing ML and other approaches to intelligent systems.
 - ML allows systems to learn from data.

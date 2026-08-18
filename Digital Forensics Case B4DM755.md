@@ -1,4 +1,4 @@
-# Digital Forensics Case B4DM755
+# TryHackMe — Digital Forensics Case B4DM755
 
 ## Room Objective
 
@@ -309,7 +309,7 @@ Deleted files could be recovered by selecting the relevant file or directory and
 
 Evidence:
 
-<img width="552" height="434" alt="Screenshot 2026-08-14 173458" src="https://github.com/user-attachments/assets/8b072ec1-6846-4fe2-b5d2-905d05422450" />
+![Screenshot 2026-08-14 173458](https://github.com/user-attachments/assets/8b072ec1-6846-4fe2-b5d2-905d05422450)
 
 ## Key Takeaways
 
@@ -374,9 +374,11 @@ Further analysis involved examining the contents of `pandorasbox.zip`, identifyi
 
 Evidence:
 
-<img width="703" height="259" alt="Screenshot 2026-08-14 190159" src="https://github.com/user-attachments/assets/625a016b-f13c-40f8-8f61-1043ae26d08c" />
-<img width="748" height="432" alt="Screenshot 2026-08-14 190341" src="https://github.com/user-attachments/assets/1ecba180-82f9-4227-890e-281ffa3218f0" />
-<img width="596" height="63" alt="Screenshot 2026-08-14 185950" src="https://github.com/user-attachments/assets/657f11e0-cc50-48f4-8c83-a31ac18eea63" />
+![Screenshot 2026-08-14 190159](https://github.com/user-attachments/assets/625a016b-f13c-40f8-8f61-1043ae26d08c)
+
+![Screenshot 2026-08-14 190341](https://github.com/user-attachments/assets/1ecba180-82f9-4227-890e-281ffa3218f0)
+
+![Screenshot 2026-08-14 185950](https://github.com/user-attachments/assets/657f11e0-cc50-48f4-8c83-a31ac18eea63)
 
 ## Key Takeaways
 
@@ -437,7 +439,7 @@ During court proceedings:
 
 ---
 
-## Key Takeaways
+## Room Summary
 
 - **DFIR First Responders** are responsible for the initial acquisition and preservation of digital evidence.
 - **Chain of Custody** maintains accountability and supports evidence integrity.

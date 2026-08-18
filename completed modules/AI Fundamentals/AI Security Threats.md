@@ -1,90 +1,145 @@
+# TryHackMe — AI Security Threats
 
-# not finish yet
+## Room Objective
 
-Welcome back. Room 1 covered the technology stack that powers modern AI: how ML algorithms learn from data, how neural networks process it, and how LLMs like ChatGPT emerged from all of that. If any of those terms are still fuzzy, it's worth going back before continuing.
+This room explores the security vulnerabilities introduced by AI models, how attackers are using AI to enhance existing techniques, and how defenders are fighting back with the same technology.
 
-This room is where things get interesting from a security perspective. Now that you understand what AI is and how it works, we're going to look at what happens when it goes wrong, intentionally or otherwise. This room covers:
+Understanding these threats is essential because the rate at which AI has been adopted has left many security teams playing catch-up with a new category of risk.
 
-The vulnerabilities that AI models introduce into an organisation's attack surface.
-How attackers are enhancing existing techniques using AI.
-How defenders are fighting back with the same technology.
-What it means to adopt AI securely.
-The rate at which AI has exploded onto the scene has left a lot of security teams playing catch-up. By the end of this room, you'll understand the threat landscape well enough to stop doing that.
+**Prerequisites:** Room 1: The Building Blocks of AI, or equivalent knowledge of AI, ML, neural networks, and LLMs.
 
-Learning Prerequisites
-This room requires completion of Room 1: The Building Blocks of AI, or equivalent knowledge of AI, ML, neural networks, and LLMs.
+---
 
-Learning Objectives
-Understand the key vulnerabilities that AI models introduce and how attackers exploit them.
-Understand how AI is being used to enhance existing attacks like phishing, malware generation, and social engineering.
-Understand how AI can be used defensively across analysis, prediction, summarisation, and investigation.
-Understand what it means to adopt AI securely and the frameworks that guide that process.
-Answer the questions below
-I'm ready to learn about AI/ML security threats!
+## Concepts Learned
 
-No answer needed
+- MITRE ATLAS framework for AI-specific threats
+- Prompt injection
+- Data poisoning
+- Model theft
+- Privacy leakage
+- Model drift
+- AI as an offensive tool (phishing, malware, social engineering)
+- Defensive applications of AI (analysis, prediction, summarisation, investigation)
+- Secure AI adoption frameworks
 
-Correct Answer
-Learn the New Threats
-Now that AI is embedded in business operations across every industry, it's introduced a new category of security concern: vulnerabilities that are specific to AI models themselves. These aren't the same as traditional software vulnerabilities. They emerge from the nature of how these models are built, trained, and deployed. To help us make sense of them, we can lean on a familiar friend.
+---
 
-If you've spent any time in cyber security, you've probably come across the MITRE ATT&CK framework. MITRE have built something similar with a focus specifically on AI threats, called the ATLAS framework. It maps out the tactics, techniques, and procedures attackers use against AI systems, and it's a useful reference as you work through this room. You can check it out here(opens in new tab).
+# Task 1 — Introduction and the ATLAS Framework
 
-AI reaching out
+## Concepts Learned
 
-Vulnerability Breakdown
-Let's look at the five key vulnerabilities in AI models that every security practitioner should know.
+Now that AI is embedded in business operations across every industry, it has introduced a new category of security concern: vulnerabilities specific to AI models themselves. These are not the same as traditional software vulnerabilities; they emerge from how these models are built, trained, and deployed.
 
-Prompt Injection occurs when an attacker overrides the original instructions provided to a model. Every AI model operates under a system prompt, a set of instructions that define how it should behave. An RPG chatbot might be told to stay in character and never discuss its underlying infrastructure. Prompt injection is when user input is crafted in a way that overrides or bypasses those instructions, causing the model to behave in ways it wasn't supposed to, whether that's revealing sensitive information, generating harmful content, or acting outside its defined scope.
+If you have spent any time in cyber security, you are probably familiar with the **MITRE ATT&CK** framework. MITRE has built something similar with a focus specifically on AI threats, called the **ATLAS framework**. It maps out the tactics, techniques, and procedures attackers use against AI systems, and is a useful reference when working through AI threat content.
 
-Data Poisoning is when an attacker manipulates the training data used to build an AI model, causing its outputs to be incorrect or biased. Take a spam filter trained on email data. If an attacker can tamper with that training data before the model is trained, they can cause the model to misclassify spam as legitimate mail, effectively blinding it to the very emails it was built to catch.
+## Hands-on Tasks
 
-AI Model Covered in Targets
+- Reviewed the five key AI model vulnerabilities.
+- Learned about the ATLAS framework as a reference for AI-specific threats.
+- Explored how AI changes the attack surface for organisations.
 
-Model Theft occurs when an attacker gains unauthorised access to an AI model, either to steal the intellectual property it represents or to use it for malicious purposes. One method is to repeatedly query a model's API and use the outputs to train a clone that replicates its behaviour, without ever needing direct access to the original weights.
+## Security Observation
 
-Privacy Leakage refers to the possibility of an AI model inadvertently revealing sensitive information from its training data. A model trained on private medical records, for example, could under the right prompting conditions surface details about real patients that were never intended to be accessible. The information doesn't disappear when training ends; it gets baked into the model's weights.
+Traditional software vulnerabilities such as buffer overflows or SQL injection target deterministic code paths. AI model vulnerabilities are fundamentally different: they exploit the probabilistic and data-dependent nature of how models learn and respond. This means defensive strategies must also evolve beyond conventional patching and input validation.
 
-Model Drift is when a model's performance degrades over time as the world it was trained on changes. A model trained on last year's network traffic patterns may start performing poorly as attack techniques evolve. This is why monitoring deployed models isn't optional; it's a security requirement. Drift can go undetected until the model is already failing in production.
+---
 
-Your Objective
-MENTOR is an AI assistant deployed by the fictional company Syntara Corp. It has been given a system prompt that defines how it behaves and what it will never reveal. Your job is to use prompt injection to override those instructions and get MENTOR to reveal its system prompt. Do that and it'll hand over the flag.
+# Task 2 — AI Model Vulnerabilities
 
-How to Approach It
-There's no single right way to do this. Experiment with how you phrase your messages and see what makes MENTOR crack. Think about what you know about how models follow instructions and how that might be exploited.
+## Concepts Learned
 
-Click the Open Agent button above to access MENTOR when you're ready.
+### Prompt Injection
 
+**Prompt injection** occurs when an attacker overrides the original instructions provided to a model. Every AI model operates under a system prompt that defines how it should behave. Prompt injection uses crafted user input to override or bypass those instructions, causing the model to behave in unintended ways — revealing sensitive information, generating harmful content, or acting outside its defined scope.
 
-Open Agent
-Answer the questions below
-What MITRE framework was developed specifically to map tactics and techniques used against AI systems?
+### Data Poisoning
 
-ATLAS
+**Data poisoning** is when an attacker manipulates the training data used to build an AI model, causing its outputs to be incorrect or biased. For example, if an attacker tampers with the training data of a spam filter, the model could be blinded to the very emails it was built to catch.
 
-Correct Answer
-What AI vulnerability occurs when user input overrides the original instructions provided to a model?
+### Model Theft
 
-Prompt injection
+**Model theft** occurs when an attacker gains unauthorised access to an AI model, either to steal the intellectual property it represents or to use it for malicious purposes. One method is to repeatedly query a model's API and use the outputs to train a clone that replicates its behaviour, without ever needing direct access to the original weights.
 
-Correct Answer
-What attack involves manipulating training data to cause a model to produce incorrect or biased outputs?
+### Privacy Leakage
 
-Data poisoning
+**Privacy leakage** refers to the possibility of an AI model inadvertently revealing sensitive information from its training data. A model trained on private medical records, for example, could under the right prompting conditions surface details about real patients that were never intended to be accessible. The information does not disappear when training ends; it gets baked into the model's weights.
 
-Correct Answer
-What attack involves repeatedly querying a model's API to train a clone that replicates its behaviour?
+### Model Drift
 
-Model theft
+**Model drift** is when a model's performance degrades over time as the world it was trained on changes. A model trained on last year's network traffic patterns may start performing poorly as attack techniques evolve. This is why monitoring deployed models is not optional — it is a security requirement.
 
-Correct Answer
-What term describes the gradual degradation of a model's performance as the environment it was trained on changes over time?
+## Hands-on Tasks
 
-Model drift
+- Reviewed each of the five key vulnerabilities in depth.
+- Understood how each vulnerability differs from traditional software flaws.
 
-Correct Answer
-What's the flag?
+## Security Observation
 
-THM{pr0mpt_1nj3ct10n_pwn3d}
+These five vulnerabilities are interconnected in practice. A model suffering from drift may become more susceptible to prompt injection as its guardrails weaken. Privacy leakage can be worsened by data poisoning if the poisoned data includes sensitive information. Defending against AI threats therefore requires a layered approach that considers how these risks compound.
 
-Correct Answer
+---
+
+# Task 3 — Hands-on: Prompt Injection with MENTOR
+
+## Concepts Learned
+
+**MENTOR** is an AI assistant deployed by the fictional company Syntara Corp. It has been given a system prompt that defines how it behaves and what it will never reveal.
+
+The objective of this task is to use **prompt injection** to override those instructions and get MENTOR to reveal its system prompt.
+
+There is no single right way to approach this. Experimenting with how messages are phrased and understanding how models follow instructions — and how that can be exploited — is the core of the exercise.
+
+## Hands-on Tasks
+
+- Accessed the MENTOR interactive agent.
+- Experimented with prompt injection techniques.
+- Attempted to override MENTOR's system prompt.
+- Retrieved the flag.
+
+## THM Question
+
+**What's the flag?**
+
+**Answer:** `THM{pr0mpt_1nj3ct10n_pwn3d}`
+
+## Security Observation
+
+Prompt injection remains one of the most practical and under-defended AI vulnerabilities. Unlike traditional input validation, there is no universally reliable way to prevent a language model from following malicious instructions when they are crafted carefully. Organisations deploying AI assistants should apply the principle of least privilege: limit what the system prompt authorises, avoid placing sensitive data in prompts, and implement output filtering and monitoring.
+
+---
+
+# Task 4 — THM Questions
+
+## THM Questions
+
+**What MITRE framework was developed specifically to map tactics and techniques used against AI systems?**
+
+**Answer:** `ATLAS`
+
+**What AI vulnerability occurs when user input overrides the original instructions provided to a model?**
+
+**Answer:** `Prompt injection`
+
+**What attack involves manipulating training data to cause a model to produce incorrect or biased outputs?**
+
+**Answer:** `Data poisoning`
+
+**What attack involves repeatedly querying a model's API to train a clone that replicates its behaviour?**
+
+**Answer:** `Model theft`
+
+**What term describes the gradual degradation of a model's performance as the environment it was trained on changes over time?**
+
+**Answer:** `Model drift`
+
+---
+
+## Key Takeaways
+
+- AI models introduce a new category of security vulnerabilities that are distinct from traditional software flaws.
+- The five key vulnerabilities are **prompt injection, data poisoning, model theft, privacy leakage, and model drift**.
+- The **ATLAS framework** provides a structured reference for understanding AI-specific threats.
+- **Prompt injection** can override system instructions and extract sensitive information from AI models.
+- **Data poisoning** can compromise model integrity at the training stage.
+- Monitoring for **model drift** is a security requirement, not just a performance concern.
+- Defending against AI threats requires understanding both offensive and defensive applications of the technology.
